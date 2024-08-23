@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+</head>
+<body>
+    <form action="/update "method="post">
+       <input type="hidden" value="<%=data._id%>" name="id"/>
+        Email:<br>
+        <input value="<%=data.email%>"name="email"/><br/><br>
+        password:<br>
+        <input value="<%=data.password%>"name="password"/>
+        <button type="submit">update</button>
+    </form>
+<a href="/showdata">back</a>
+</body>
+</html>
